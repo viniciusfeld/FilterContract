@@ -1,6 +1,7 @@
 import pandas as pd
 from utils import conectar_db, remover_mascara, consultar_clientes_local
 
+
 def criar_tabelas():
     conn, cursor = conectar_db()
    
@@ -58,9 +59,9 @@ def cadastrar_entidades(df):
                     if produto_contrato_local == produto and percentual_contrato_local == percentual:
                         cadastrar_empresa_tj_local(id_item_contrato_local, cnpj_empresa_tj)
                         
-    print("\n")
+    print("\n")    
 
-nome_do_arquivo = 'Planilhas/Planilha_-_Comissoes_-_2023-Copy.xlsx'
+nome_do_arquivo = 'C:\tributo\FilterContract\Planilhas\Planilhas\Planilha_-_Comissoes_-_2023-Copy.xlsx'
 nome_da_planilha = 'FEVEREIRO-012023'
 
 df_comissoes = pd.read_excel(nome_do_arquivo, sheet_name=nome_da_planilha)
