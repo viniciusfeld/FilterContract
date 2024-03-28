@@ -33,7 +33,7 @@ class ChangeNamePartner():
 
             print(merged_df)
 
-            ws = wb[name]
+            ws = wb[name] 
 
             collumn = 'B' if name == 'MARCO-022023' or name == 'ABRIL - 032023' or name == 'MAIO - 042023' else 'A'
 
