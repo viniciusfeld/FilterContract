@@ -32,7 +32,7 @@ class ChangeNamePartner():
             merged_df.drop(columns=['Nome antigo', 'Nome novo'], inplace=True)
 
             print(merged_df)
-
+ 
             ws = wb[name] 
 
             collumn = 'B' if name == 'MARCO-022023' or name == 'ABRIL - 032023' or name == 'MAIO - 042023' else 'A'
