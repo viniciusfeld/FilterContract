@@ -31,7 +31,7 @@ class ChangeNamePartner():
 
             merged_df.drop(columns=['Nome antigo', 'Nome novo'], inplace=True)
 
-            print(merged_df)
+            print(merged_df) 
  
             ws = wb[name] 
 
